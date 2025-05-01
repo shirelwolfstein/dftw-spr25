@@ -13,58 +13,88 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Grenze+Gotisch:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="piercings1.html">Piercings</a>
-            <a href="healing2.html">Healing</a>
-            <a href="jewelry3.html">Jewelry</a>
-            <a href="anatomy4.html">Anatomy</a>
-            <a href="booking-pricing5.html">Booking & Pricing</a>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active" id="logo" aria-label="Home"> <img width="100px"
+                    src="images/small home logo.png" </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="page-links">
+
+                    <a href="piercings1.html">Piercings</a>
+                    <a href="healing2.html">Healing</a>
+                    <a href="jewelry3.html">Jewelry</a>
+                    <a href="anatomy4.html">Anatomy</a>
+                    <a href="booking-pricing5.html">Booking & Pricing</a>
+                </div>
         </nav>
     </header>
     <main>
         <h1>Piercings</h1>
         <!--content will go here -->
         <img> <!--main piercing graphic-->
-        <div>
+        <div id="hacker-list">
+            <label for="search">Search</label>
+            <input type="search" class="search" id="search" placeholder="search">
             <h2>Ear</h2>
-            <ul>
-                <li>Forward helix
-                    <ul>
+            <ul class="list">
+                <li>
+                    <h3 class="name">Example</h3>
+                    <ul class="info">
+                        <li> slang term</li>
+                        <li>descroption.</li>
+                        <li>number of holes</li>
+                    </ul> 
+                </li>
+                <li>
+                    <h3 class="name">Forward helix</h3>
+                    <ul class="info">
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the outer fold of the ear, closest to the face on the ear itself.</li>
-                        <li>Number of puncture holes- 1, (they are nicely paired or grouped if you have space but they
-                            are considered different piercings).</li>
-                    </ul>
+                        <li>Pierced through the outer fold of the ear, closest to the face on the ear
+                            itself.</li>
+                        <li>Number of puncture holes- 1, (they are nicely paired or grouped if you have
+                            space but they are considered different piercings).</li>
+                    </ul> 
                 </li>
                 <li>Daith
+                    
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the fold of the ear above the tragus and inner ear canal, and leading to the
+                        <li>Pierced through the fold of the ear above the tragus and inner ear canal, and
+                            leading to
+                            the
                             concha.</li>
                         <li>Number of puncture holes- 1</li>
-                        <li>Although this can be healed with a curved barbell, people should be aware that it is best to
+                        <li>Although this can be healed with a curved barbell, people should be aware that
+                            it is
+                            best to
                             heal with a ring since curved bars run the risk of flipping and making the angle of the
                             piercing canal heal so that nothing sits flush. Less visible often times too.</li>
                     </ul>
                 </li>
                 <li>Industrial
                     <ul>
-                        <li>Industrial piercings are also known as scaffold piercings in the UK/Ireland</li>
-                        <li>Pierced through the outer fold, or helix, of the ear. It generally goes horizontal on an
+                        <li class="name">Industrial piercings are also known as scaffold piercings in the UK/Ireland
+                        </li>
+                        <li>Pierced through the outer fold, or helix, of the ear. It generally goes
+                            horizontal on an
                             angle from
                             the outer helix to the top of the ear or closer to the face.</li>
                         <li>Number of puncture holes- 2</li>
-                        <li>Can be healed with a bar or with separate straight barbells. The bar ensures that the angles
+                        <li>Can be healed with a bar or with separate straight barbells. The bar ensures that the
+                            angles
                             of the
-                            piercings stay aligned, but the constant movement through canals can cause irritation and
+                            piercings stay aligned, but the constant movement through canals can cause irritation
+                            and
                             prolonged
                             healing time.&nbsp;</li>
                     </ul>
@@ -72,7 +102,8 @@
                 <li>Conch
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the inner part of the outer ear, often in the middle closest to the outer
+                        <li>Pierced through the inner part of the outer ear, often in the middle closest to the
+                            outer
                             fold.&nbsp;</li>
                         <li>Number of puncture holes- 1</li>
                     </ul>
@@ -80,14 +111,16 @@
                 <li>Snug
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the fold of the concha cartilage before it meets the mid helix.&nbsp;</li>
+                        <li>Pierced through the fold of the concha cartilage before it meets the mid helix.&nbsp;
+                        </li>
                         <li>Number of puncture holes- 1</li>
                     </ul>
                 </li>
                 <li>Anti tragus
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the ridge of cartilage above the lobe of the ear, near the lower part of the
+                        <li>Pierced through the ridge of cartilage above the lobe of the ear, near the lower part of
+                            the
                             inner fold of the ear, leading to the conch.</li>
                         <li>Number of puncture holes- 1</li>
                     </ul>
@@ -95,9 +128,12 @@
                 <li>Helix
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the outer fold of the ear, along the curve. Often done towards the outer or
-                            farthermost edge, but can be done anywhere and at various angles for different looks.</li>
-                        <li>Number of puncture holes- 1, often multiples (they are nicely paired or grouped if you have
+                        <li>Pierced through the outer fold of the ear, along the curve. Often done towards the outer
+                            or
+                            farthermost edge, but can be done anywhere and at various angles for different looks.
+                        </li>
+                        <li>Number of puncture holes- 1, often multiples (they are nicely paired or grouped if you
+                            have
                             space but they are considered different piercings).</li>
                     </ul>
                 </li>
@@ -106,7 +142,8 @@
                         <li>Mid or mid-helix&nbsp;</li>
                         <li>Pierced through the outer fold of the ear, along the curve towards the middle of the ear
                             height-wise.&nbsp;</li>
-                        <li>Number of puncture holes- 1, often multiples (they are nicely paired or grouped if you have
+                        <li>Number of puncture holes- 1, often multiples (they are nicely paired or grouped if you
+                            have
                             space
                             but they are considered different piercings).</li>
                     </ul>
@@ -122,7 +159,8 @@
                 <li>Tragus
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
-                        <li>Pierced through the triangle shaped cartilage blocking the inner ear canal, connected to the
+                        <li>Pierced through the triangle shaped cartilage blocking the inner ear canal, connected to
+                            the
                             face.</li>
                         <li>Number of puncture holes- 1</li>
                     </ul>
@@ -144,10 +182,12 @@
                     </ul>
                 </li>
             </ul>
+
         </div>
         <div>
             <h2>Face</h2>
-            <ul>
+            <ul class="list">
+
                 <li>Frog eyes
                     <ul>
                         <li>Slang and professional/anatomical name are the same, known by the same thing, often mistaken
@@ -208,21 +248,21 @@
                         <li>Number of puncture holes- 1&nbsp;</li>
                     </ul>
                 </li>
-            <li>Smiley
-                <ul>
-                    <li>Smiley piercing, upper lip frenulum piercing</li>
-                    <li>Pierced through the thin skin connecting the upper lip and the gums.</li>
-                    <li>Number of puncture holes- 1</li>
-                </ul>
-            </li>
-            <li>Angel fangs
-                <ul>
-                    <li>Angel fangs, symmetrical vertical labrets on upper lip</li>
-                    <li>Pierced through the upper lip, right above the top lip to the middle of the top lip.</li>
-                    <li>Number of puncture holes- 2</li>
-                </ul>
-            </li>
-            
+                <li>Smiley
+                    <ul>
+                        <li>Smiley piercing, upper lip frenulum piercing</li>
+                        <li>Pierced through the thin skin connecting the upper lip and the gums.</li>
+                        <li>Number of puncture holes- 1</li>
+                    </ul>
+                </li>
+                <li>Angel fangs
+                    <ul>
+                        <li>Angel fangs, symmetrical vertical labrets on upper lip</li>
+                        <li>Pierced through the upper lip, right above the top lip to the middle of the top lip.</li>
+                        <li>Number of puncture holes- 2</li>
+                    </ul>
+                </li>
+
                 <li>Labret
                     <ul>
                         <li>Slang and professional/anatomical name are the same</li>
@@ -245,27 +285,27 @@
                     <ul>
                         <li>Ashley piercing, inverse vertical labret</li>
                         <li>Pierced through the center of the bottom lip straight through.</li>
-                        li>Number of puncture holes- 1</li>
+                        li>Number of puncture holes- 1
+                </li>
+
+                <li>Snakebites
+                    <ul>
+                        <li>Snakebites, paired labrets</li>
+                        <li>Pierced through the skin below the bottom lip on either side.</li>
+                        <li>Number of puncture hole- 2, but are considered separate piercings. These can be done
+                            with
+                            only 1, or can be done with more than 2.</li>
                     </ul>
                 </li>
-                    <li>Snakebites
-                        <ul>
-                            <li>Snakebites, paired labrets</li>
-                            <li>Pierced through the skin below the bottom lip on either side.</li>
-                            <li>Number of puncture hole- 2, but are considered separate piercings. These can be done
-                                with
-                                only 1, or can be done with more than 2.</li>
-                        </ul>
-                    </li>
-                    <li>Vertical labret
-                        <ul>
-                            <li>Slang and professional/anatomical name are the same</li>
-                            <li>Pierced through the center of the bottom lip to under the ridge below the bottom of the
-                                lip.
-                            </li>
-                            <li>Number of puncture holes- 1</li>
-                        </ul>
-                    </li>
+                <li>Vertical labret
+                    <ul>
+                        <li>Slang and professional/anatomical name are the same</li>
+                        <li>Pierced through the center of the bottom lip to under the ridge below the bottom of the
+                            lip.
+                        </li>
+                        <li>Number of puncture holes- 1</li>
+                    </ul>
+                </li>
                 <li>Medusa
                     <ul>
                         <li>Medusa piercing, philtrum piercing</li>
@@ -289,64 +329,75 @@
                         <li>Number of puncture holes- 1</li>
                     </ul>
                 </li>
-                 <li>Nostrils
-                        <ul>
-                            <li>Slang and professional/anatomical name are the same</li>
-                            <li>Pierced through the skin of the nostril all the way through one side of the nose.</li>
-                            <li>Number of puncture holes- 1</li>
-                        </ul>
-                    </li>
+                <li>Nostrils
+                    <ul>
+                        <li>Slang and professional/anatomical name are the same</li>
+                        <li>Pierced through the skin of the nostril all the way through one side of the nose.</li>
+                        <li>Number of puncture holes- 1</li>
+                    </ul>
+                </li>
+            </ul>
             <h2>Body&nbsp;</h2>
+            <ul class="list">
+                <li>Navel
                     <ul>
-                        <li>Navel
-                            <ul>
-                                <li>Slang and professional/anatomical name are the same, belly button piercing</li>
-                                <li>Pierced through the skin above the belly button, exiting within the belly button.
-                                </li>
-                                <li>Number of puncture holes- 1</li>
-                            </ul>
+                        <li>Slang and professional/anatomical name are the same, belly button piercing</li>
+                        <li>Pierced through the skin above the belly button, exiting within the belly button.
                         </li>
-                    <li>Nipples
-                        <ul>
-                            <li>Slang and professional/anatomical name are the same</li>
-                            <li>Pierced through the protruding part of the nipple.</li>
-                            <li>Number of puncture holes- 2, they are considered separate piercings but are typically
-                                paired. It is possible to only get one.</li>
-                        </ul>
-                    </li>
-                    <li>Back dermals / anchor dermals
-                        <ul>
-                            <li>Slang and professional/anatomical name are the same</li>
-                            <li>Needle inserted under the first layers of skin on either side of the same entrance hole.
-                                The
-                                needle does not pierce all the way through, it is then removed and an anchor is placed
-                                below
-                                the skin. This piercing jewelry cannot be taken in and out, just removed fully. The head
-                                of
-                                the jewelry can be switched out for alternative looks.&nbsp;</li>
-                            <li>Number of puncture holes- 1</li>
-                        </ul>
-                    </li>
-                    <li>Surface piercings</li>
+                        <li>Number of puncture holes- 1</li>
+                    </ul>
+                </li>
+                <li>Nipples
                     <ul>
-                <li>Slang and professional/anatomical name are the same</li>
-                <li>Pierced through any patch of skin, must be a staple bar so that it sits under the first layer of
-                    skin and the two posts come
-                    up to sit above the surface. This jewelry limits rejection.</li>
-                <li>Number of puncture holes- 1</li>
+                        <li>Slang and professional/anatomical name are the same</li>
+                        <li>Pierced through the protruding part of the nipple.</li>
+                        <li>Number of puncture holes- 2, they are considered separate piercings but are typically
+                            paired. It is possible to only get one.</li>
+                    </ul>
+                </li>
+                <li>Back dermals / anchor dermals
+                    <ul>
+                        <li>Slang and professional/anatomical name are the same</li>
+                        <li>Needle inserted under the first layers of skin on either side of the same entrance hole.
+                            The
+                            needle does not pierce all the way through, it is then removed and an anchor is placed
+                            below
+                            the skin. This piercing jewelry cannot be taken in and out, just removed fully. The head
+                            of
+                            the jewelry can be switched out for alternative looks.&nbsp;</li>
+                        <li>Number of puncture holes- 1</li>
+                    </ul>
+                </li>
+                <li>Surface piercings</li>
+                <ul>
+                    <li>Slang and professional/anatomical name are the same</li>
+                    <li>Pierced through any patch of skin, must be a staple bar so that it sits under the first layer of
+                        skin and the two posts come
+                        up to sit above the surface. This jewelry limits rejection.</li>
+                    <li>Number of puncture holes- 1</li>
+                </ul>
             </ul>
-            </ul>
+        </div>
         </div>
     </main>
     <footer>
         <ui>
-            <li> Copyright information </li> 
+            <li> Copyright information </li>
             <li> Twitter: HellhoundPiercings </li>
             <li> Instagram: HellhoundPiercings </li>
             <li> Tiktok: HellhoundPiercings </li>
         </ui>
-        
+
         Safe information for safe body modifications and autonomy.
     </footer>
     <script src="scripts.js"> </script>
+    <!-- List JS docs https://listjs.com/docs/ -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script>
+        var options = {
+            // valueNames: ['name', 'slang', 'desc', 'num', 'com']
+            valueNames: ['name', 'info']
+        };
+        var hackerList = new List('hacker-list', options);
+    </script>
 </body>
