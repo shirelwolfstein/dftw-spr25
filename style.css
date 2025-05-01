@@ -1,16 +1,29 @@
-:root { 
+:root {
     color-scheme: dark;
-    bg: #212121;
-    /* --accent-bg: #2b2b2b; */
-    text: #ffffff;
-    /* --text-light: #ffffff; */
-    accent: #ff0000;
-    accent-hover: #ff0000;
-    /* --accent-text: var(--bg); */
-    /* --code: #f06292; */
-    /* --preformatted: #ccc; */
-    /* --disabled: #ffffff; */'
-} 
+}
+
+/* global styles */
+
+body {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+main {
+    width: 80vw;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Header Styles */
 .page-links {
@@ -75,35 +88,31 @@ header nav {
     justify-content: space-between;
 }
 
-
-nav {
-    accent: #ff0000;
-    accent-hover: #ff0000;
-}
-
-
 h1,
 h2 {
     font-family: "Grenze Gotisch", serif;
     font-optical-sizing: auto;
 }
 
+/* page specific layouts */
 
-body {
-    font-family: "Baskervville SC", serif;
-    font-weight: 400;
-    font-style: normal;
-
-    margin: 0;
+.home main {
+    align-items: flex-start;
 }
 
-/* footer formatting */
-list-style-type: none; 
 
+
+
+/* footer formatting */
+
+footer ul {
+list-style-type: none;
+}
 
 /* Media Queries */
 
-@media (min-width: 480px) {
+@media (min-width: 677px) {
+
     /* check with a demo tab how big your breakpoint is, it may not be 480 */
     .topnav .icon {
         display: none;
@@ -121,7 +130,7 @@ list-style-type: none;
         padding: 0;
         justify-content: flex-start;
     }
-    
+
     /* .topnav a { 
         color: #000000;
         text-decoration: none;
