@@ -36,10 +36,9 @@
     <main>
         <h1>Anatonmy</h1>
         <!--content will go here. THINK OF EX, SNUG, IND., BELLY-->
-
-
-
-        <div>
+        <div id="hacker-list">
+            <label for="search">Search</label>
+            <input type="search" class="search" id="search" placeholder="search">
             <ul>
                 <li>Ear
                     <ol start="13">
@@ -254,67 +253,23 @@
 
 
 
-
-        <h2>Possible categories? If not the specific piercing here</h2>
-        <img> <!--graphic of piercing from og 1piercings page-->
-        <h3>Specific piercing, anatomical, slang terms</h3>
-        <p> Explanation of where the piercing needs enough meat to grip through.
-        </p>
-        <img> <!--gen info anchor stamp-->
-        <img> <!--jewelry icon-->
-        <h4>Correct or compatible anatomy</h4>
-        <img> <!--photo of correct-->
-        <h4>Incorrect or incompatible anatomy</h4>
-        <img> <!--photo of incorrect anatomy, possibly mutiples-->
-
-
-        <h2>Possible categories? If not the specific piercing here</h2>
-        <img> <!--graphic of piercing from og 1piercings page-->
-        <h3>Specific piercing, anatomical, slang terms</h3>
-        <p> Explanation of where the piercing needs enough meat to grip through.
-        </p>
-        <img> <!--gen info anchor stamp-->
-        <img> <!--jewelry icon-->
-        <h4>Correct or compatible anatomy</h4>
-        <img> <!--photo of correct-->
-        <h4>Incorrect or incompatible anatomy</h4>
-        <img> <!--photo of incorrect anatomy, possibly mutiples-->
-
-        <h2>Possible categories? If not the specific piercing here</h2>
-        <img> <!--graphic of piercing from og 1piercings page-->
-        <h3>Specific piercing, anatomical, slang terms</h3>
-        <p> Explanation of where the piercing needs enough meat to grip through.
-        </p>
-        <img> <!--gen info anchor stamp-->
-        <img> <!--jewelry icon-->
-        <h4>Correct or compatible anatomy</h4>
-        <img> <!--photo of correct-->
-        <h4>Incorrect or incompatible anatomy</h4>
-        <img> <!--photo of incorrect anatomy, possibly mutiples-->
-
-        <h2>Possible categories? If not the specific piercing here</h2>
-        <img> <!--graphic of piercing from og 1piercings page-->
-        <h3>Specific piercing, anatomical, slang terms</h3>
-        <p> Explanation of where the piercing needs enough meat to grip through.
-        </p>
-        <img> <!--gen info anchor stamp-->
-        <img> <!--jewelry icon-->
-        <h4>Correct or compatible anatomy</h4>
-        <img> <!--photo of correct-->
-        <h4>Incorrect or incompatible anatomy</h4>
-        <img> <!--photo of incorrect anatomy, possibly mutiples-->
-
-
     </main>
     <footer>
-        <ui>
+        <ul>
             <li> Copyright information </li> 
             <li> Twitter: HellhoundPiercings </li>
             <li> Instagram: HellhoundPiercings </li>
             <li> Tiktok: HellhoundPiercings </li>
-        </ui>
+        </ul>
         
         Safe information for safe body modifications and autonomy.
     </footer>
-    <script src="scripts.js"> </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script>
+        var options = {
+            // valueNames: ['name', 'slang', 'desc', 'num', 'com']
+            valueNames: ['name', 'info']
+        };
+        var hackerList = new List('hacker-list', options);
+    </script>
 </body>
