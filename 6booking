@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hellhound Piercings- Pricing</title>
+    <meta name="description" content="Total breakdown piercing information website">
+        <meta name="author" content="ShirEl Wolfstein">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Hellhound Piercings" />
+<meta property="og:url" content="https://shirelwolfstein.github.io/dftw-spr25/5booking-pricing.html" />
+<meta property="og:image" content="images/cerb logo heading white.png" />
+        <link rel="icon" type="image/png" href="favicon.ico"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Grenze+Gotisch:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active" id="logo" aria-label="Home"> <img width="100px"
+                    src="images/small home logo.png" </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="page-links">
+
+                    <a href="1piercing.html">Piercings</a>
+                    <a href="2healing.html">Healing</a>
+                    <a href="3jewelry.html">Jewelry</a>
+                    <a href="4anatomy.html">Anatomy</a>
+                    <a href="5pricing.html">Pricing</a>
+                    <a href="6booking.html">Booking</a>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Booking</h1>
+
+<section class="contact-section">
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Booking</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your booking"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Request Appointment</button>
+  </form>
+
+</section>
+ </main>
+    <!--there will be a link to a google form for booking but it
+            can be input as one of the pages and there just be an anchorpoint
+            here. This wouldnt actually be an external but an INTERNAL link
+            so the line wont be set up this way, I am just keeping as a placeholder.
+            this will look like a complete button I think bc otherwise 
+            it may not be clockable-->
+    <a href="website" target="_blank"> Booking form, opens new tab</a>
+    </main>
+    <footer>
+        <ul>
+            <li> Copyright information </li>
+            <li> Twitter: HellhoundPiercings </li>
+            <li> Instagram: HellhoundPiercings </li>
+            <li> Tiktok: HellhoundPiercings </li>
+        </ul>
+
+        Safe information for safe body modifications and autonomy.
+    </footer>
+    <script src="scripts.js"> </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script>
+        var options = {
+            // valueNames: ['name', 'slang', 'desc', 'num', 'com']
+            valueNames: ['name', 'info']
+        };
+        var hackerList = new List('hacker-list', options);
+    </script>
+</body>
